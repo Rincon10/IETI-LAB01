@@ -22,7 +22,6 @@ public class UserServiceHashMap implements UserService {
 
     @Override
     public User create(User user) {
-        user.setCreatedAt( java.time.LocalDate.now().toString());
         users.putIfAbsent(user.getId(), user);
         return user;
     }

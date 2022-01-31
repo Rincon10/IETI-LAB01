@@ -1,4 +1,4 @@
-package eud.eci.ieti.taskapp;
+package edu.eci.ieti.taskapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

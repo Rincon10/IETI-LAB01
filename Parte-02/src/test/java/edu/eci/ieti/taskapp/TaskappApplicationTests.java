@@ -1,4 +1,4 @@
-package eud.eci.ieti.taskapp;
+package edu.eci.ieti.taskapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

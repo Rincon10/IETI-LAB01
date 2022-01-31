@@ -8,7 +8,7 @@
 		<version>2.6.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>eud.eci.ieti</groupId>
+	<groupId>edu.eci.ieti</groupId>
 	<artifactId>taskapp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>taskapp</name>

@@ -11,11 +11,11 @@ import java.util.List;
  */
 public interface TaskService
 {
-    Task create(Task task );
+    Task create(Task task ) throws TaskServiceException;
 
     Task findById( String id ) throws TaskServiceException;
 
-    List<Task> getAll();
+    List<Task> getAll() throws TaskServiceException;
 
     boolean deleteById( String id ) throws TaskServiceException;
 

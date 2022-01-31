@@ -39,12 +39,12 @@ public class UserController {
     }
 
     @GetMapping( "/{id}" )
-    public ResponseEntity<User> findById(@PathVariable String id ) {
+    public ResponseEntity<?> findById(@PathVariable String id ) {
         try {
             return new ResponseEntity<>(userService.findById(id), HttpStatus.ACCEPTED);
         } catch ( UserServiceException ex ) {
             Logger.getLogger(UserController.class.getName()).log(Level.SEVERE, null, ex);
-            return new ResponseEntity<>(null,HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(ex.getMessage(),HttpStatus.NOT_FOUND);
         }
     }
 
@@ -62,7 +62,7 @@ public class UserController {
     }
 
     @PutMapping( "/{id}" )
-    public ResponseEntity<User> update( @RequestBody UserDto userDto, @PathVariable String id ) {
+    public ResponseEntity<?> update( @RequestBody UserDto userDto, @PathVariable String id ) {
         ModelMapper modelMapper = new ModelMapper();
         try {
             User user = modelMapper.map(userDto, User.class);
@@ -70,18 +70,18 @@ public class UserController {
             return new ResponseEntity<>(HttpStatus.OK);
         } catch (UserServiceException ex) {
             Logger.getLogger(UserController.class.getName()).log(Level.SEVERE, null, ex);
-            return new ResponseEntity<>(null,HttpStatus.FORBIDDEN);
+            return new ResponseEntity<>(ex.getMessage(),HttpStatus.FORBIDDEN);
         }
     }
 
     @DeleteMapping( "/{id}" )
-    public ResponseEntity<Boolean> delete( @PathVariable String id ) {
+    public ResponseEntity<?> delete( @PathVariable String id ) {
         try {
             userService.deleteById(id);
             return new ResponseEntity<>(true,HttpStatus.OK);
         } catch (UserServiceException ex) {
             Logger.getLogger(UserController.class.getName()).log(Level.SEVERE, null, ex);
-            return new ResponseEntity<>(false,HttpStatus.FORBIDDEN);
+            return new ResponseEntity<>(ex.getMessage(),HttpStatus.FORBIDDEN);
         }
     }
 }

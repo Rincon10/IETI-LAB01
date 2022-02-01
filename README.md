@@ -158,7 +158,7 @@ public class UserController {
     <img src="https://github.com/Rincon10/IETI-LAB01/blob/main/Parte-01/src/main/resources/static/img/parte01/04-deleteUser.jpg" />
     <br />
     <br />
-    <img src="https://github.com/Rincon10/IETI-LAB01/blob/main/Parte-01/src/main/resources/static/img/parte01/04-deleteUser.jpg-2" />
+    <img src="https://github.com/Rincon10/IETI-LAB01/blob/main/Parte-01/src/main/resources/static/img/parte01/04-deleteUser-2.jpg" />
 
 ## Part 2: Implementing the Tasks Microservice RESTFUL API
 1. Follow the previous part 10 first steps
@@ -222,6 +222,6 @@ public class UserController {
     <img src="https://github.com/Rincon10/IETI-LAB01/blob/main/Parte-02/src/main/resources/static/img/04-deleteTask.jpg" />
     <br />
     <br />
-    <img src="https://github.com/Rincon10/IETI-LAB01/blob/main/Parte-02/src/main/resources/static/img/04-deleteTask.jpg-2" />
+    <img src="https://github.com/Rincon10/IETI-LAB01/blob/main/Parte-02/src/main/resources/static/img/04-deleteTask-.jpg" />
  
 Remember to add your both **Github** repos url into the **Ada** input box to deliver correctly your codelab.

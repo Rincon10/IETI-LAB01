@@ -222,6 +222,6 @@ public class UserController {
     <img src="https://github.com/Rincon10/IETI-LAB01/blob/main/Parte-02/src/main/resources/static/img/04-deleteTask.jpg" />
     <br />
     <br />
-    <img src="https://github.com/Rincon10/IETI-LAB01/blob/main/Parte-02/src/main/resources/static/img/04-deleteTask-.jpg" />
+    <img src="https://github.com/Rincon10/IETI-LAB01/blob/main/Parte-02/src/main/resources/static/img/04-deleteTask-2.jpg" />
  
 Remember to add your both **Github** repos url into the **Ada** input box to deliver correctly your codelab.

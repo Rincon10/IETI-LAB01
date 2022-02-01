@@ -133,6 +133,33 @@ public class UserController {
 20. Build / Run your project.
 21. Download and install [Insomnia](https://insomnia.rest/download) and test ALL the endpoints of your API.
 
+## Testing User Service
+
+* POST-User
+
+    <img src="https://github.com/Rincon10/IETI-LAB01/blob/main/Parte-01/src/main/resources/static/img/parte01/01-postUser.jpg" />
+
+* getAllUsers
+
+    <img src="https://github.com/Rincon10/IETI-LAB01/blob/main/Parte-01/src/main/resources/static/img/parte01/02-getAllUsers.jpg" />
+    
+* getUserById
+
+    <img src="https://github.com/Rincon10/IETI-LAB01/blob/main/Parte-01/src/main/resources/static/img/parte01/02-getUserById.jpg" />
+    
+* updateUser
+
+    <img src="https://github.com/Rincon10/IETI-LAB01/blob/main/Parte-01/src/main/resources/static/img/parte01/03-updateUser.jpg" />
+    <br /><br />
+    <img src="https://github.com/Rincon10/IETI-LAB01/blob/main/Parte-01/src/main/resources/static/img/parte01/03-updateUser-2.jpg" />
+    
+* deleteUser
+
+    <img src="https://github.com/Rincon10/IETI-LAB01/blob/main/Parte-01/src/main/resources/static/img/parte01/04-deleteUser.jpg" />
+    <br />
+    <br />
+    <img src="https://github.com/Rincon10/IETI-LAB01/blob/main/Parte-01/src/main/resources/static/img/parte01/04-deleteUser.jpg-2" />
+
 ## Part 2: Implementing the Tasks Microservice RESTFUL API
 1. Follow the previous part 10 first steps
 2. Create a new package called ***dto*** and inside define your ***TaskDto*** object with at least the following fields:
@@ -169,6 +196,32 @@ public class UserController {
 7. Implement your ***TaskController*** (Try to avoid copy paste, use the **User Microservice** as a reference but try doing it conciously).
 8. Test ALL the endpoints of your API using **Insomnia**.
 
-## 
+## Testing Task Service
 
+* POST-Task
+
+    <img src="https://github.com/Rincon10/IETI-LAB01/blob/main/Parte-02/src/main/resources/static/img/01-postTask.jpg" />
+
+* getAllTasks
+
+    <img src="https://github.com/Rincon10/IETI-LAB01/blob/main/Parte-02/src/main/resources/static/img/02-getAllTasks.jpg" />
+
+* getTaskById
+
+    <img src="https://github.com/Rincon10/IETI-LAB01/blob/main/Parte-02/src/main/resources/static/img/02-getTaskById.jpg" />
+
+* updateTask
+
+    <img src="https://github.com/Rincon10/IETI-LAB01/blob/main/Parte-02/src/main/resources/static/img/03-updateTask.jpg" />
+    <br />
+    <br />
+    <img src="https://github.com/Rincon10/IETI-LAB01/blob/main/Parte-02/src/main/resources/static/img/03-updateTask-2.jpg" />
+
+* deleteTask
+
+    <img src="https://github.com/Rincon10/IETI-LAB01/blob/main/Parte-02/src/main/resources/static/img/04-deleteTask.jpg" />
+    <br />
+    <br />
+    <img src="https://github.com/Rincon10/IETI-LAB01/blob/main/Parte-02/src/main/resources/static/img/04-deleteTask.jpg-2" />
+ 
 Remember to add your both **Github** repos url into the **Ada** input box to deliver correctly your codelab.

@@ -1,6 +1,6 @@
 _type: export
 __export_format: 4
-__export_date: 2022-01-31T21:41:34.750Z
+__export_date: 2022-01-31T23:32:12.437Z
 __export_source: insomnia.desktop.app:v2021.7.2
 resources:
   - _id: req_9ec605c48a1f4230a9e343b9b4c65bdb
@@ -48,6 +48,33 @@ resources:
     description: ""
     scope: design
     _type: workspace
+  - _id: req_c80a544d72fa45eca922f0ad63f77343
+    parentId: fld_5ded36398b954eb48f9134282f21c162
+    modified: 1643671790320
+    created: 1643671766652
+    url: "{{ _.scheme }}://{{ _.host }}:{{ _.port
+      }}/v1/task/b1761caf-d978-4f3f-98a7-7568890e2e12"
+    name: deleteTask
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_fdd94ff49478405ebd57f39a6821bd51
+    authentication: {}
+    metaSortKey: -1643663598947.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
   - _id: req_d0b05032717f427ea7f943d4f1b3127e
     parentId: fld_215d09f09f974266851a3421904e09f3
     modified: 1643664090768
@@ -90,9 +117,43 @@ resources:
     environmentPropertyOrder: null
     metaSortKey: -1643663502722
     _type: request_group
+  - _id: req_6622ae905e094ac29dc36fa76e027d2c
+    parentId: fld_215d09f09f974266851a3421904e09f3
+    modified: 1643671700128
+    created: 1643671644314
+    url: "{{ _.scheme }}://{{ _.host }}:{{ _.port
+      }}/v1/task/0a57047e-239e-4608-9247-96b8ee1161d3"
+    name: putTask
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Updating Task from API-REST",
+        	"description": "same description",
+        	"status" : "DONE",
+        	"assignedTo":"Camilo Rincon",
+        	"dueDate":"today"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_1566dc2c4829470495ede91b08e5d3c7
+    authentication: {}
+    metaSortKey: -1643663100427.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
   - _id: req_93fbac0dd2be4aa1840cf3cbce33236f
     parentId: fld_d9b42d755c964ba2bf66125c51f616f7
-    modified: 1643663963759
+    modified: 1643671661093
     created: 1643662687611
     url: "{{ _.scheme }}://{{ _.host }}:{{ _.port }}/{{ _.base_path }}/"
     name: postUser
@@ -131,6 +192,39 @@ resources:
     environmentPropertyOrder: null
     metaSortKey: -1643662648212
     _type: request_group
+  - _id: req_757848e560854e0e9b0e2746df3b7868
+    parentId: fld_d9b42d755c964ba2bf66125c51f616f7
+    modified: 1643671662308
+    created: 1643671295698
+    url: "{{ _.scheme }}://{{ _.host }}:{{ _.port }}/v1/task/"
+    name: postTask
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "222new Task",
+        	"description": "222this is a description from a task",
+        	"status" : "DOING",
+        	"assignedTo":"Camilo Rincon",
+        	"dueDate":"today"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_d39f689add864bb382eaa4cd5e839160
+    authentication: {}
+    metaSortKey: -1643662135905.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
   - _id: req_eaed907ea2484cc49ada273e92a1d9ae
     parentId: fld_b25ee8f00e1144038465c10b20119c33
     modified: 1643662935803
@@ -162,6 +256,27 @@ resources:
     environmentPropertyOrder: {}
     metaSortKey: -1643661584250
     _type: request_group
+  - _id: req_0cf01a87ac8f49c5ae3c276690e1a434
+    parentId: fld_b25ee8f00e1144038465c10b20119c33
+    modified: 1643671223602
+    created: 1643671214892
+    url: "{{ _.scheme }}://{{ _.host }}:{{ _.port }}/v1/task"
+    name: getAllTasks
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1643661584175
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
   - _id: req_b32dd3a1e5534199b145d41060ab3916
     parentId: fld_b25ee8f00e1144038465c10b20119c33
     modified: 1643664005881
@@ -176,6 +291,28 @@ resources:
     headers: []
     authentication: {}
     metaSortKey: -1643661584150
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_536985b0e0dc4d8aa48b1159b68e4c61
+    parentId: fld_b25ee8f00e1144038465c10b20119c33
+    modified: 1643671587797
+    created: 1643671577491
+    url: "{{ _.scheme }}://{{ _.host }}:{{ _.port
+      }}/v1/task/0a57047e-239e-4608-9247-96b8ee1161d3"
+    name: getTaskById
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1643661584100
     isPrivate: false
     settingStoreCookies: true
     settingSendCookies: true
